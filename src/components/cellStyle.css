@@ -1,11 +1,21 @@
+:root {
+  --black: #000000;
+  --blackBorder: solid 1px var(--black);
+}
+
 .container {
   display: flex;
+  flex: 1;
+  border: var(--blackBorder);
 }
 
 .containerLive {
   display: flex;
+  border: var(--blackBorder);
 }
 
 .containerDead {
   display: flex;
+  background: var(--black);
+  border: var(--blackBorder);
 }
