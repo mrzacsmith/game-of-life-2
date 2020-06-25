@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.containerLive {
+  display: flex;
+}
+
+.containerDead {
+  display: flex;
+}
