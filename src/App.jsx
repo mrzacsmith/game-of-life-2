@@ -16,7 +16,7 @@ import {
 
 function App() {
   const initalGameState = {
-    game: '',
+    game: new GameLogic(),
     size: [50, 50],
     gameRunning: false,
     gameInteral: 100,
@@ -30,7 +30,14 @@ function App() {
 
   const runGame = () => {}
 
-  const renderGame = () => {}
+  const renderGame = () => {
+    let newGame = []
+    let cellRow = []
+
+    for (let i = 0; i < this.size[0]; i++) {
+      for (let j = 0; j < this.size[1]; j++) {}
+    }
+  }
 
   // change handlers for row, column, gameInterval, open, close
   const handleChangeRow = (e) => {}
