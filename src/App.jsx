@@ -15,26 +15,61 @@ import {
 } from '@material-ui/core'
 
 function App() {
+  const initalGameState = {
+    game: '',
+    size: [50, 50],
+    gameRunning: false,
+    gameInteral: 100,
+    open: false,
+  }
+
+  // game controls to start, stop, run, renderGame
+  const startGame = () => {}
+
+  const stopGame = () => {}
+
+  const runGame = () => {}
+
+  const renderGame = () => {}
+
+  // change handlers for row, column, gameInterval, open, close
+  const handleChangeRow = (e) => {}
+
+  const handleChangeCol = (e) => {}
+
+  const changeGameInterval = (e) => {}
+
+  const handleOpen = () => {}
+
+  const handleClose = () => {}
+
+  // cell functions
+  const storeCell = (position) => {}
+
   return (
     <div className="gameContainer">
       <div className="intro">
         <div>
           <h2>Game of Life</h2>
-          <p>Game of Life description</p>
+          <p>
+            Following John von Neumann's definition of life as a creation that
+            can be reproduce itself, John Conway began to experiment with
+            two-dimensional cellular automation rules.{' '}
+          </p>
           <List>
             <p>Game Rules</p>
             <ListItem button>
-              <ListItemText style={{ color: 'white', textAlign: 'center' }}>
+              <ListItemText style={{ color: 'black', textAlign: 'center' }}>
                 Any live cell with two or three live neighbours survives..
               </ListItemText>
             </ListItem>
             <ListItem button>
-              <ListItemText style={{ color: 'white', textAlign: 'center' }}>
+              <ListItemText style={{ color: 'black', textAlign: 'center' }}>
                 Any dead cell with three live neighbours becomes a live cell.
               </ListItemText>
             </ListItem>
             <ListItem button>
-              <ListItemText style={{ color: 'white', textAlign: 'center' }}>
+              <ListItemText style={{ color: 'black', textAlign: 'center' }}>
                 All other live cells die in the next generation. Similarly, all
                 other dead cells stay dead.
               </ListItemText>
