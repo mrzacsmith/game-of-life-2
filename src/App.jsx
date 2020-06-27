@@ -15,16 +15,20 @@ import {
 } from '@material-ui/core'
 
 function App() {
-  const initalGameState = {
+  const [initalGameState, setInitialGameState] = useState({
     game: new GameLogic(),
     size: [50, 50],
     gameRunning: false,
     gameInteral: 100,
     open: false,
-  }
+  })
+
+  const { game, size, gameRunning, gameInteral, open } = initalGameState
 
   // game controls to start, stop, run, renderGame
-  const startGame = () => {}
+  const startGame = () => {
+    // if(!this.ga)
+  }
 
   const stopGame = () => {}
 
@@ -34,8 +38,8 @@ function App() {
     let newGame = []
     let cellRow = []
 
-    for (let i = 0; i < this.size[0]; i++) {
-      for (let j = 0; j < this.size[1]; j++) {}
+    for (let i = 0; i < size[0]; i++) {
+      for (let j = 0; j < size[1]; j++) {}
     }
   }
 
