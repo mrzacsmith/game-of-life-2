@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GameLogic from './components/GameLogic'
 import './App.css'
 import {
@@ -9,6 +9,9 @@ import {
   Dialog,
   DialogContent,
   DialogContentText,
+  ListItemText,
+  List,
+  ListItem,
 } from '@material-ui/core'
 
 function App() {
@@ -18,6 +21,25 @@ function App() {
         <div>
           <h2>Game of Life</h2>
           <p>Game of Life description</p>
+          <List>
+            <p>Game Rules</p>
+            <ListItem button>
+              <ListItemText style={{ color: 'white', textAlign: 'center' }}>
+                Any live cell with two or three live neighbours survives..
+              </ListItemText>
+            </ListItem>
+            <ListItem button>
+              <ListItemText style={{ color: 'white', textAlign: 'center' }}>
+                Any dead cell with three live neighbours becomes a live cell.
+              </ListItemText>
+            </ListItem>
+            <ListItem button>
+              <ListItemText style={{ color: 'white', textAlign: 'center' }}>
+                All other live cells die in the next generation. Similarly, all
+                other dead cells stay dead.
+              </ListItemText>
+            </ListItem>
+          </List>
         </div>
         {/* End of intro */}
       </div>
